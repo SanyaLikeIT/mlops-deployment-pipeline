@@ -1,0 +1,26 @@
+schema: '2.0'
+stages:
+  prepare_data:
+    cmd: python code/datasets/prepare_data.py
+    deps:
+    - path: code/datasets/prepare_data.py
+      hash: md5
+      md5: 2252dd35436729eb9e8ff8d928dce50e
+      size: 3229
+    - path: data/raw/wine.csv
+      hash: md5
+      md5: 2cc308fd41a74f34027d70c5ff5dd0a0
+      size: 13329
+    - path: requirements.txt
+      hash: md5
+      md5: d10a7489b0529f4b84358cd5187bb24a
+      size: 163
+    outs:
+    - path: data/processed/test.csv
+      hash: md5
+      md5: 8a3833e2698430f220a060d808ebbd3d
+      size: 2624
+    - path: data/processed/train.csv
+      hash: md5
+      md5: d7d2f5bfdf24223b8683f2591e46c98c
+      size: 9627
