@@ -24,3 +24,31 @@ stages:
       hash: md5
       md5: d7d2f5bfdf24223b8683f2591e46c98c
       size: 9627
+  train_model:
+    cmd: python code/models/train.py
+    deps:
+    - path: code/models/train.py
+      hash: md5
+      md5: 92a9399be7d7b14adecd1edf162c278f
+      size: 2884
+    - path: data/processed/test.csv
+      hash: md5
+      md5: 8a3833e2698430f220a060d808ebbd3d
+      size: 2624
+    - path: data/processed/train.csv
+      hash: md5
+      md5: d7d2f5bfdf24223b8683f2591e46c98c
+      size: 9627
+    - path: requirements.txt
+      hash: md5
+      md5: d10a7489b0529f4b84358cd5187bb24a
+      size: 163
+    outs:
+    - path: models/metrics.json
+      hash: md5
+      md5: e1e4244f5ed5269f30a15312358d2c2c
+      size: 71
+    - path: models/wine_model.joblib
+      hash: md5
+      md5: 3f21253a230a3d0f2c2aaf4b54a60a43
+      size: 2129

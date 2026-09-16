@@ -8,3 +8,15 @@ stages:
     outs:
       - data/processed/train.csv
       - data/processed/test.csv
+  train_model:
+    cmd: python code/models/train.py
+    deps:
+      - code/models/train.py
+      - data/processed/train.csv
+      - data/processed/test.csv
+      - requirements.txt
+    outs:
+      - models/wine_model.joblib
+    metrics:
+      - models/metrics.json:
+          cache: false
