@@ -1,0 +1,15 @@
+.venv/
+.tmp/
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.vscode/
+.idea/
+.DS_Store
+*.log
+.pipeline.lock
+mlruns/
+/data/processed/
+/models/*.joblib
+/models/*.tmp

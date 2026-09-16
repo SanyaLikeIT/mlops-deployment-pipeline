@@ -1,0 +1,8 @@
+pandas==2.3.3
+numpy==2.3.3
+scikit-learn==1.7.2
+joblib==1.5.2
+dvc==3.63.0
+# DVC 3.x needs pathspec internals removed in version 1.x.
+pathspec==0.12.1
+mlflow==3.3.2
