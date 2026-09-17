@@ -1,0 +1,8 @@
+**
+!code/
+!code/deployment/
+!code/deployment/api/
+!code/deployment/api/**
+!code/deployment/app/
+!code/deployment/app/**
+**/__pycache__/
